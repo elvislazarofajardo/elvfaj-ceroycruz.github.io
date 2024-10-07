@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Color de fondo claro y agradable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Para centrar contenido verticalmente */
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+    padding: 20px; /* Espaciado interno */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00796b; /* Color atractivo para el título */
+    font-size: 2.5rem; /* Aumentar tamaño de fuente */
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff; /* Fondo blanco */
+    border: 3px solid #00796b; /* Borde más grueso y color atractivo */
+    font-size: 2.5rem; /* Tamaño de fuente mayor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s; /* Transiciones para interacciones */
+}
+
+.cell:hover {
+    background-color: #b2dfdb; /* Color de fondo al pasar el mouse */
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+}
+
+.status {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #004d40; /* Color del texto de estado */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #00796b; /* Fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición al cambiar color */
+}
+
+button:hover {
+    background-color: #004d40; /* Color al pasar el mouse */
+}
